@@ -11,12 +11,6 @@ function convertToObject(sourceString) {
   const lines = sourceString.split(';');
 
   for (let i = 0; i < lines.length; i++) {
-    if (lines[i] === '') {
-      lines.splice(i, 1);
-    }
-  }
-
-  for (let i = 0; i < lines.length; i++) {
     const parts = lines[i].split(':');
 
     if (parts.length >= 2) {
